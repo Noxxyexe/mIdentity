@@ -9,9 +9,8 @@
 - 📄 Interface de création d'identité (NUI HTML/CSS/JS)
 - ✅ Compatible ESX Legacy
 - 🧠 Vérification des champs (nom, prénom, date de naissance, sexe)
-- 🔐 Protection contre les double-insertions (anti-relog bug)
 - 🗃️ Enregistrement direct en base de données
-- 🌍 Localisation facile (FR / EN possible)
+- 🌍 Localisation FR
 
 ---
 
@@ -39,34 +38,23 @@
 ```
 mIdentity/
 │
-├── client/         → Code client-side
-├── server/         → Code server-side (insertion BDD, checks, etc.)
-├── html/           → Interface utilisateur (formulaire)
-├── config.lua      → Config du script (valeurs par défaut, sexe, etc.)
-└── fxmanifest.lua  → Déclaration du script
+├── client.lua          → Code client-side
+├── server.lua          → Code server-side (insertion BDD, checks, etc.)
+├── ui/                 → Interface utilisateur (formulaire)
+└── fxmanifest.lua      → Déclaration du script
 ```
 
 ---
 
 ## 🎥 Preview
 
-[![mIdentity Preview](https://img.youtube.com/vi/xxxxxxxxxxx/0.jpg)](https://www.youtube.com/watch?v=xxxxxxxxxxx)
+[![mIdentity Preview](https://img.youtube.com/vi/vsyk9mCkPXE/0.jpg)](https://www.youtube.com/watch?v=vsyk9mCkPXE)
 
 ---
 
 ## 🧠 Astuces & Conseils
 
-- Tu peux personnaliser les champs ou ajouter d'autres informations (taille, origine, groupe sanguin…) dans le fichier HTML + `server.lua`.
-- Si tu veux déclencher d'autres scripts après l'identité (genre spawn menu, cinématique, etc.), utilise l'event `mIdentity:finished`.
-
----
-
-## 🚧 Roadmap
-
-- [ ] Support multilingue dynamique
-- [ ] Ajout d’un champ photo + prise d’un selfie avec screenshot-basic
-- [ ] Système de validation côté staff (optionnel)
-- [ ] Intégration automatique avec Discord Webhook
+- Tu peux personnaliser les champs dans le fichier HTML.
 
 ---
 
@@ -74,7 +62,7 @@ mIdentity/
 
 Tu rencontres un bug ou veux contribuer ?  
 Crée une issue ou fais une pull request.  
-Tu peux aussi me contacter directement sur Discord : `ton-tag`
+Tu peux aussi me contacter directement sur Discord : `https://discord.gg/WaNB7dCRZW`
 
 ---
 
