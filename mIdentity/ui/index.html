@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mIdentity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="identity">
+        <div class="container-identity">
+          <h2 class="form-title">Création de personnage</h2>
+          <p class="form-subtitle">
+            Remplissez les informations de base de votre personnage
+          </p>
+  
+          <div class="form-group">
+            <div class="form-row">
+              <div class="form-col">
+                <label for="firstname">Prénom</label>
+                <input
+                  type="text"
+                  id="firstname"
+                  placeholder="Entrez votre prénom"
+                />
+              </div>
+              <div class="form-col">
+                <label for="lastname">Nom de famille</label>
+                <input type="text" id="lastname" placeholder="Entrez votre nom" />
+              </div>
+            </div>
+  
+            <div class="form-row">
+              <div class="form-col">
+                <label for="date">Date de naissance</label>
+                <input type="date" id="date" />
+              </div>
+              <div class="form-col">
+                <label for="height">Taille (cm)</label>
+                <input
+                  type="number"
+                  id="height"
+                  placeholder="Ex: 175"
+                  min="100"
+                  max="250"
+                />
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <label for="history">Histoire du personnage (Facultatif)</label>
+              <textarea
+                id="history"
+                placeholder="Décrivez brièvement l'histoire de votre personnage..."
+              ></textarea>
+            </div>
+  
+            <div class="form-group">
+              <label>Genre</label>
+              <div class="gender-buttons">
+                <button class="gender-button" id="gender-male">
+                  <i class="fas fa-mars"></i> Homme
+                </button>
+                <button class="gender-button" id="gender-female">
+                  <i class="fas fa-venus"></i> Femme
+                </button>
+              </div>
+            </div>
+  
+            <button class="identity-button" id="identity-button">
+              <i class="fas fa-arrow-right"></i> Continuer
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="face">
+        <div class="container-face">
+          <h2 class="face-title">Choix de votre visage</h2>
+          <p class="face-subtitle">Choisissez le visage de votre père et de votre mère</p>
+          <div class="face-button">
+            <button class="face-dad active" id="face-dad">
+              Père
+            </button>
+            <button class="face-mom" id="face-mom">
+              Mère
+            </button>
+          </div>
+
+           <div class="face-group-father" id="face-group-father">
+            <div class="face-row">
+              <div class="face-col" data-parent-index="0"><img src="img/parent/dad-0.png" alt=""></div>
+              <div class="face-col" data-parent-index="1"><img src="img/parent/dad-1.png" alt=""></div>
+              <div class="face-col" data-parent-index="2"><img src="img/parent/dad-2.png" alt=""></div>
+              <div class="face-col" data-parent-index="3"><img src="img/parent/dad-3.png" alt=""></div>
+              <div class="face-col" data-parent-index="4"><img src="img/parent/dad-4.png" alt=""></div>
+            </div>
+            <div class="face-row">
+              <div class="face-col" data-parent-index="5"><img src="img/parent/dad-5.png" alt=""></div>
+              <div class="face-col" data-parent-index="6"><img src="img/parent/dad-6.png" alt=""></div>
+              <div class="face-col" data-parent-index="7"><img src="img/parent/dad-7.png" alt=""></div>
+              <div class="face-col" data-parent-index="8"><img src="img/parent/dad-8.png" alt=""></div>
+              <div class="face-col" data-parent-index="9"><img src="img/parent/dad-9.png" alt=""></div>
+            </div>
+            <div class="face-row">
+              <div class="face-col" data-parent-index="10"><img src="img/parent/dad-10.png" alt=""></div>
+              <div class="face-col" data-parent-index="11"><img src="img/parent/dad-11.png" alt=""></div>
+              <div class="face-col" data-parent-index="12"><img src="img/parent/dad-12.png" alt=""></div>
+              <div class="face-col" data-parent-index="13"><img src="img/parent/dad-13.png" alt=""></div>
+              <div class="face-col" data-parent-index="14"><img src="img/parent/dad-14.png" alt=""></div>
+            </div>
+            <div class="face-row">
+              <div class="face-col" data-parent-index="15"><img src="img/parent/dad-15.png" alt=""></div>
+              <div class="face-col" data-parent-index="16"><img src="img/parent/dad-16.png" alt=""></div>
+              <div class="face-col" data-parent-index="17"><img src="img/parent/dad-17.png" alt=""></div>
+              <div class="face-col" data-parent-index="18"><img src="img/parent/dad-18.png" alt=""></div>
+              <div class="face-col" data-parent-index="19"><img src="img/parent/dad-19.png" alt=""></div>
+            </div>
+           </div>
+
+           <div class="face-group-mother" id="face-group-mother">
+            <div class="face-row">
+              <div class="face-col" data-mother-index="21"><img src="img/parent/mom-21.png" alt=""></div>
+              <div class="face-col" data-mother-index="22"><img src="img/parent/mom-22.png" alt=""></div>
+              <div class="face-col" data-mother-index="23"><img src="img/parent/mom-23.png" alt=""></div>
+              <div class="face-col" data-mother-index="24"><img src="img/parent/mom-24.png" alt=""></div>
+              <div class="face-col" data-mother-index="25"><img src="img/parent/mom-25.png" alt=""></div>
+            </div>
+            <div class="face-row">
+              <div class="face-col" data-mother-index="26"><img src="img/parent/mom-26.png" alt=""></div>
+              <div class="face-col" data-mother-index="27"><img src="img/parent/mom-27.png" alt=""></div>
+              <div class="face-col" data-mother-index="28"><img src="img/parent/mom-28.png" alt=""></div>
+              <div class="face-col" data-mother-index="29"><img src="img/parent/mom-29.png" alt=""></div>
+              <div class="face-col" data-mother-index="30"><img src="img/parent/mom-30.png" alt=""></div>
+            </div>
+            <div class="face-row">
+              <div class="face-col" data-mother-index="31"><img src="img/parent/mom-31.png" alt=""></div>
+              <div class="face-col" data-mother-index="32"><img src="img/parent/mom-32.png" alt=""></div>
+              <div class="face-col" data-mother-index="33"><img src="img/parent/mom-33.png" alt=""></div>
+              <div class="face-col" data-mother-index="34"><img src="img/parent/mom-34.png" alt=""></div>
+              <div class="face-col" data-mother-index="35"><img src="img/parent/mom-35.png" alt=""></div>
+            </div>
+            <div class="face-row">
+              <div class="face-col" data-mother-index="36"><img src="img/parent/mom-36.png" alt=""></div>
+              <div class="face-col" data-mother-index="37"><img src="img/parent/mom-37.png" alt=""></div>
+              <div class="face-col" data-mother-index="38"><img src="img/parent/mom-38.png" alt=""></div>
+              <div class="face-col" data-mother-index="39"><img src="img/parent/mom-39.png" alt=""></div>
+              <div class="face-col" data-mother-index="40"><img src="img/parent/mom-40.png" alt=""></div>
+            </div>
+           </div>
+
+           <button class="next-button" id="next-button">
+            <i class="fas fa-arrow-right"></i> Continuer
+          </button>
+        </div>
+      </div>
+
+      <div class="container-option">
+        <div class="container-face-option">
+        <h2 class="face-title">Personnalisation</h2>
+        <p class="face-subtitle">Approfondissez la personnalisation de votre personnage</p>
+
+            <!-- <div class="slider-group">
+              <h3 class="slider-title">Genre</h3>
+              <div class="slider-container">
+                <input type="range" min="0" max="1" value="0" class="slider" id="binarySlider">
+                <input type="number" min="0" max="1" value="0" class="slider-input" id="binaryInput">
+              </div>
+            </div> -->
+
+            <div class="slider-group">
+              <h3 class="slider-title">Ressemblance</h3>
+              <div class="slider-container">
+                <input type="range" min="0" max="100" value="50" class="slider" id="rangeSlider">
+                <input type="number" min="0" max="100" value="50" class="slider-input" id="rangeInput">
+              </div>
+            </div>
+
+            <div class="color-picker-group">
+              <h3 class="slider-title">Couleur des yeux</h3>
+              <div class="color-grid" id="eyeColorGrid">
+                <div class="color-box" data-color="0" style="background-color: #253024;"></div>
+                <div class="color-box" data-color="1" style="background-color: #052502;"></div>
+                <div class="color-box" data-color="2" style="background-color: #92b0c4;"></div>
+                <div class="color-box" data-color="3" style="background-color: #1f3b4d;"></div>
+                <div class="color-box" data-color="4" style="background-color: #2c2525;"></div>
+                <div class="color-box" data-color="5" style="background-color: #1d1313;"></div>
+                <div class="color-box" data-color="6" style="background-color: #a86104;"></div>
+                <div class="color-box" data-color="7" style="background-color: #4b5b5f;"></div>
+                <div class="color-box" data-color="8" style="background-color: #8f9091;"></div>
+                <div class="color-box" data-color="9" style="background-color: #a72db8;"></div>
+                <div class="color-box" data-color="10" style="background-color: #ccc01e;"></div>
+                <div class="color-box" data-color="11" style="background-color: #4d17a3;"></div>
+                <div class="color-box" data-color="12" style="background-color: #000000;"></div>
+              </div>
+            </div>
+
+            <div class="slider-group">
+              <h3 class="slider-title">Sourcils</h3>
+              <div class="slider-container">
+                <input type="range" min="0" max="33" value="0" class="slider" id="eyebrowsSlider">
+                <input type="number" min="0" max="33" value="0" class="slider-input" id="eyebrowsInput">
+              </div>
+            </div>
+
+            <div class="color-picker-group">
+              <h3 class="slider-title">Couleur des sourcils</h3>
+              <div class="color-grid" id="eyebrowColorGrid">
+                <div class="color-box" data-color="0" style="background-color: #241c1c;"></div>
+                <div class="color-box" data-color="26" style="background-color: #3c3e3f;"></div>
+                <div class="color-box" data-color="29" style="background-color: #bdccd4;"></div>
+                <div class="color-box" data-color="30" style="background-color: #3e134e;"></div>
+                <div class="color-box" data-color="31" style="background-color: #63207e;"></div>
+                <div class="color-box" data-color="33" style="background-color: #ff00ff;"></div>
+                <div class="color-box" data-color="35" style="background-color: #ff7ed8;"></div>
+                <div class="color-box" data-color="36" style="background-color:#4892a5;"></div>
+                <div class="color-box" data-color="37" style="background-color: #45518a;"></div>
+                <div class="color-box" data-color="39" style="background-color:#3c5e2d;"></div>
+                <div class="color-box" data-color="40" style="background-color:#20493f;"></div>
+                <div class="color-box" data-color="42" style="background-color: #93ff05;"></div>
+                <div class="color-box" data-color="46" style="background-color: #ffbc05;"></div>
+                <div class="color-box" data-color="48" style="background-color: #ff6600;"></div>
+                <div class="color-box" data-color="52" style="background-color: #c22e2e;"></div>
+                <div class="color-box" data-color="53" style="background-color: #740707;"></div>
+                <div class="color-box" data-color="54" style="background-color: #3d0303;"></div>
+              </div>
+            </div>
+
+            <div class="slider-group">
+              <h3 class="slider-title">Cheveux</h3>
+              <div class="slider-container">
+                <input type="range" min="0" max="73" value="0" class="slider" id="hairSlider">
+                <input type="number" min="0" max="73" value="0" class="slider-input" id="hairInput">
+              </div>
+            </div>
+
+            <div class="color-picker-group">
+              <h3 class="slider-title">Couleur des cheveux</h3>
+              <div class="color-grid" id="hairColorGrid">
+                <div class="color-box" data-color="0" style="background-color: #241c1c;"></div>
+                <div class="color-box" data-color="26" style="background-color: #3c3e3f;"></div>
+                <div class="color-box" data-color="29" style="background-color: #bdccd4;"></div>
+                <div class="color-box" data-color="30" style="background-color: #3e134e;"></div>
+                <div class="color-box" data-color="31" style="background-color: #63207e;"></div>
+                <div class="color-box" data-color="33" style="background-color: #ff00ff;"></div>
+                <div class="color-box" data-color="35" style="background-color: #ff7ed8;"></div>
+                <div class="color-box" data-color="36" style="background-color:#4892a5;"></div>
+                <div class="color-box" data-color="37" style="background-color: #45518a;"></div>
+                <div class="color-box" data-color="39" style="background-color:#3c5e2d;"></div>
+                <div class="color-box" data-color="40" style="background-color:#20493f;"></div>
+                <div class="color-box" data-color="42" style="background-color: #93ff05;"></div>
+                <div class="color-box" data-color="46" style="background-color: #ffbc05;"></div>
+                <div class="color-box" data-color="48" style="background-color: #ff6600;"></div>
+                <div class="color-box" data-color="52" style="background-color: #c22e2e;"></div>
+                <div class="color-box" data-color="53" style="background-color: #740707;"></div>
+                <div class="color-box" data-color="54" style="background-color: #3d0303;"></div>
+              </div>
+            </div>
+
+            <div class="slider-group">
+              <h3 class="slider-title">Barbe</h3>
+              <div class="slider-container">
+                <input type="range" min="0" max="28" value="0" class="slider" id="beardSlider">
+                <input type="number" min="0" max="28" value="0" class="slider-input" id="beardInput">
+              </div>
+            </div>
+
+            <div class="color-picker-group">
+              <h3 class="slider-title">Couleur de la barbe</h3>
+              <div class="color-grid" id="beardColorGrid">
+                <div class="color-box" data-color="0" style="background-color: #241c1c;"></div>
+                <div class="color-box" data-color="26" style="background-color: #3c3e3f;"></div>
+                <div class="color-box" data-color="29" style="background-color: #bdccd4;"></div>
+                <div class="color-box" data-color="30" style="background-color: #3e134e;"></div>
+                <div class="color-box" data-color="31" style="background-color: #63207e;"></div>
+                <div class="color-box" data-color="33" style="background-color: #ff00ff;"></div>
+                <div class="color-box" data-color="35" style="background-color: #ff7ed8;"></div>
+                <div class="color-box" data-color="36" style="background-color:#4892a5;"></div>
+                <div class="color-box" data-color="37" style="background-color: #45518a;"></div>
+                <div class="color-box" data-color="39" style="background-color:#3c5e2d;"></div>
+                <div class="color-box" data-color="40" style="background-color:#20493f;"></div>
+                <div class="color-box" data-color="42" style="background-color: #93ff05;"></div>
+                <div class="color-box" data-color="46" style="background-color: #ffbc05;"></div>
+                <div class="color-box" data-color="48" style="background-color: #ff6600;"></div>
+                <div class="color-box" data-color="52" style="background-color: #c22e2e;"></div>
+                <div class="color-box" data-color="53" style="background-color: #740707;"></div>
+                <div class="color-box" data-color="54" style="background-color: #3d0303;"></div>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
